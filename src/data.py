@@ -3,7 +3,7 @@ Module: data.py
 Description:
     Module for loading and splitting the Iris dataset.
     This module provides functions to load the Iris dataset and split it into
-    training and testing sets.
+    training and testing sets
 """
 
 import os

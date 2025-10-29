@@ -42,7 +42,7 @@ def main() -> None:
     save_model(trained_model)
     save_metadata(feature_names, target_names)
 
-    logger.info("Model trained and saved successfully.")
+    logger.info("Model has been trained and saved successfully.")
 
 
 if __name__ == "__main__":

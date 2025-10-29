@@ -75,7 +75,7 @@ def evaluate_model(
     Evaluate the model and return train and test scores.
 
     Parameters
-    ----------
+    -----------
     model : BaseEstimator
         The trained model to evaluate
     X_train : np.ndarray
