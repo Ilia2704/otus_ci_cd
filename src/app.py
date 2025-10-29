@@ -28,11 +28,11 @@ def main():
         feature_inputs.append(value)
 
     # Make prediction
-    if st.button("Предсказать вид ириса"):
+    if st.button("Классифицировать вид ириса"):
         features = [feature_inputs]
         prediction = model.predict(features)
         species = target_names[prediction[0]]
-        st.success(f"Предсказанный вид ириса: {species}")
+        st.success(f"Итак, вид ириса: {species}")
 
     # Display feature importance
     st.subheader("Важность признаков:")

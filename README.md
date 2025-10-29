@@ -31,3 +31,13 @@ git push -u origin HEAD
 #### Note:
 When using HTTPS, GitHub will ask for your username and password.
 Use your Personal Access Token (PAT) instead of the password.
+
+
+
+## Create ENV 
+
+```
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements/requirements.txt
+```
