@@ -8,8 +8,6 @@ The focus is on reproducibility, code quality, and CI/CD practices rather than m
 
 ## Clone and Push to Your Own GitHub Repository
 
-### Clone the original repository
-
 ### Change the remote to your own repository
 ```bash
 git remote remove origin
