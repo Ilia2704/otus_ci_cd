@@ -8,18 +8,15 @@ The focus is on reproducibility, code quality, and CI/CD practices rather than m
 
 ## Clone and Push to Your Own GitHub Repository
 
-### 1) Clone the original repository
-```bash
-git clone https://github.com/ORG/ORIGINAL_REPO.git
-cd ORIGINAL_REPO
-```
-### 2) Change the remote to your own repository
+### Clone the original repository
+
+### Change the remote to your own repository
 ```bash
 git remote remove origin
 git remote add origin https://github.com/Ilia2704/otus-cicd.git
 ```
 
-### 3) Verify the remote
+### Verify the remote
 ```bash
 git remote -v
 ```
@@ -29,7 +26,7 @@ git remote -v
 
 `origin  https://github.com/Ilia2704/otus-cicd.git (push)`
 
-### 4) Push your local branch
+### Push your local branch
 ```bash
 git push -u origin HEAD
 ```
@@ -85,3 +82,6 @@ This repository uses GitHub Actions for continuous integration:
 - basic validation of the training pipeline
 
 CI configuration is located in .github/workflows/.
+
+> **Note:** Deployment assumes a pre-existing target instance.
+> The CI/CD pipeline will fail if the instance is not available.
