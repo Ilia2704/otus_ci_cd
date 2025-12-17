@@ -65,6 +65,8 @@ pytest -q
 ``` streamlit run src/app.py ```
 
 ## Project structure
+
+```text
 otus_ci_cd/
 ├── src/            # Application and ML logic
 ├── tests/          # Unit and integration tests
@@ -81,4 +83,5 @@ This repository uses GitHub Actions for continuous integration:
 - dependency installation
 - automated tests
 - basic validation of the training pipeline
+
 CI configuration is located in .github/workflows/.
