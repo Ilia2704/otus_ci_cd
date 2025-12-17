@@ -1,4 +1,10 @@
-# OTUS. CI/CD
+# CI/CD for ML
+
+This repository is a demo MLOps / CI-CD project created as part of an OTUS course.
+It demonstrates a typical machine learning workflow with automated testing and CI:
+data preparation, model training, validation, and application-level execution.
+
+The focus is on reproducibility, code quality, and CI/CD practices rather than model complexity.
 
 ## Clone and Push to Your Own GitHub Repository
 
@@ -41,3 +47,38 @@ python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements/requirements.txt
 ```
+
+## Run the project
+### Run tests
+``` 
+pytest -q
+```
+
+### Train the model
+
+``` python -m src.train ```
+
+### Run the application (if applicable)
+
+``` python -m src.app ```
+
+``` streamlit run src/app.py ```
+
+## Project structure
+otus_ci_cd/
+├── src/            # Application and ML logic
+├── tests/          # Unit and integration tests
+├── data/           # Training / demo data
+├── models/         # Trained model artifacts
+├── scripts/        # Helper and automation scripts
+├── requirements/   # Dependency definitions
+└── .github/        # CI/CD workflows
+
+
+## CI/CD
+
+This repository uses GitHub Actions for continuous integration:
+- dependency installation
+- automated tests
+- basic validation of the training pipeline
+CI configuration is located in .github/workflows/.
