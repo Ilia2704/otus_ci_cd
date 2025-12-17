@@ -75,7 +75,7 @@ otus_ci_cd/
 ├── scripts/        # Helper and automation scripts
 ├── requirements/   # Dependency definitions
 └── .github/        # CI/CD workflows
-
+```
 
 ## CI/CD
 
